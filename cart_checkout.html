@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>My Website</title>
+  </head>
+  <body>
+    <section>
+      <div class="form-div">
+        <form action="">
+        <table class="table-1">
+          <tr>
+            <td>
+              <label class="form-heading">Billing Address</label>
+            </td>
+            <td>
+              <label class="form-heading">Payment</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input name="name" autocomplete="name" />
+            </td>
+            <td>
+              <label>Accepted Cards</label>
+              <label>
+                <br/>
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="email" />
+            </td>
+            <td>
+              <label> Name on Card </label>
+              <input name="name"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input name="address" />
+            </td>
+            <td>
+              <label> Credit card number </label>
+              <input type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" name="city" />
+            </td>
+            <td>
+              <label> Exp Month </label>
+              <input type="text" name="month" />
+            </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td class="table-2">
+              <label> State </label>
+              <input name="state" />
+            </td>
+            <td class="table-2">
+              <label> Zip </label>
+              <input type="text" name="zip"/>
+            </td>
+            <td class="table-2">
+              <label> Exp Year </label>
+              <input type="text" min="1900" max="2030" name="year" maxlength="4" minlength="4"/>
+            </td>
+            <td class="table-2">
+              <label> CVV </label>
+              <input type="password" minlength="3" maxlength="4"/>
+            </td>
+          </tr>
+        </table>
+        <input type="checkbox" name="Shipping" value="Shipping"/>
+        <label>Shipping address same as billing</label>
+        <button class="checkout-btn" type="submit">Continue to checkout</button>
+      </div>
+    </form>
+    </section>
+  </body>
+</html>
