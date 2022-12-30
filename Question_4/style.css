@@ -1,0 +1,7 @@
+body {
+  background-image: url("background-img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 300%;
+  color: green;
+}

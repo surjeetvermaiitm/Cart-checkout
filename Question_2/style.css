@@ -10,32 +10,35 @@ label {
 section {
   border: 1px solid grey;
   height: 50%;
-  width: 52%;
+  width: 54%;
   background-color: #f2f2f2;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-top: 10%;
   margin-left: 25%;
 }
+
 .form-div {
   margin: 1em 1em 1em 1em;
-  padding-right: 10px;
 }
-td {
-  padding-right: 180px;
+.user-details td {
+  padding-right: 193px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
 }
-.table-2 {
-  padding-right: 16px;
-}
-.table-2 input {
-  width: 100%;
-}
-input {
+
+.user-details input {
   width: 200%;
   height: 25px;
   box-shadow: black;
+}
+
+.card-details td {
+  padding-left: 10px;
+}
+.card-details input {
+  width: 90%;
+  height: 25px;
 }
 
 .checkout-btn {
