@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Javascript Qn:1</h1>
+    <form action="#">
+      <fieldset>
+        <label for="student-name">Enter the Student name:</label>
+        <input
+          type="text"
+          placeholder="Enter the student name"
+          id="student-name"
+        />
+        <br />
+        <br />
+        <label for="student-id">Enter the Student name:</label>
+        <input
+          type="email"
+          placeholder="Enter the student id"
+          id="student-id"
+        />
+        <br />
+        <br />
+
+        <label for="num-1">Enter the first Number:</label>
+        <input type="number" placeholder="Enter the first number" id="num-1" />
+        <br />
+        <br />
+
+        <label for="num-2">Enter the second Number:</label>
+        <input type="number" placeholder="Enter the second number" id="num-2" />
+        <br />
+        <br />
+
+        <button onclick="outputFunction()"">Click me!</button>
+      </fieldset>
+    </form>
+    <div id="output"></div>
+    <script>
+    outputFunction=()=>{
+        let studentName=document.getElementById("student-name");
+        let output="";
+        output+=`<h2>Student Name: ${studentName.value}</h2>`;
+        let studentId=document.getElementById("student-id");
+        output+=`<h2>Student Id: ${studentId.value}</h2>`;
+        let num1=document.getElementById("num-1");
+        output+=`<p>Entered num1: ${num1.value}</p>`;
+        let num2=document.getElementById("num-2");
+        output+=`<p>Entered num2: ${num2.value}</p>`;
+        output+=`<p>Sum of two number = ${Number(num1.value)+Number(num2.value)}</p>`;
+        output+=`<p>Product of two number = ${Number(num1.value)*Number(num2.value)}</p>`;
+        output+=`<p>Difference of two number = ${Number(num1.value)-Number(num2.value)}</p>`;
+        output+=`<p>Quotient of two number = ${Number(num1.value)%Number(num2.value)}</p>`;
+        document.getElementById("output").innerHTML=output;
+    }
+      
+    </script>
+  </body>
+</html>

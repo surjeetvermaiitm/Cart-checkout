@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="font-size: 30px">
+    <div clas="content">
+      <label for="bg-color">Choose Background color: </label>
+      <input type="color" value="#ffffff" name="bg-color" id="bg-color" />
+      <br />
+      <label for="font-select">Choose font type: </label>
+      <select name="font-select" id="font-select">
+        <option value="serif">serif</option>
+        <option value="sans-serif">sans-serif</option>
+      </select>
+      <p>
+        Full name: Sara Abdullah Alotaibi<br />
+        Email: S20008199@seu.edu.sa<br />
+        Address: Al Sarah st<br />
+        City: Riyadh <br />
+        State: Saudi Arabia
+      </p>
+    </div>
+    <script>
+      window.addEventListener("load", changeBgColor, false);
+      let defaultBgColor = "#0000ff";
+      function changeBgColor() {
+        let bgColor = document.querySelector("#bg-color");
+        bgColor.value = defaultBgColor;
+        bgColor.addEventListener("change", updateColor, false);
+        bgColor.select();
+      }
+      function updateColor(event) {
+        let ele = document.querySelector("body");
+        ele.style.backgroundColor = event.target.value;
+      }
+      let fontSelect = document.getElementById("font-select");
+      let result = document.querySelector("*");
+      fontSelect.addEventListener("click", () => {
+        fontSelect.addEventListener("change", () => {
+          result.style.fontFamily = fontSelect.value;
+          console.log(fontSelect.value);
+        });
+      });
+    </script>
+  </body>
+</html>
